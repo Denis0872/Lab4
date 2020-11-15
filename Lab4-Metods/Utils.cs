@@ -21,5 +21,31 @@ namespace Lab4_Metods
             a = b;
             b = temp;
         }
+        public static bool Factorial(int n, out int answer)
+        {
+            int k; //счётчик
+            int f;//промежуточное значение
+            bool ok = true;//проверка 
+            if (n < 0)//n-количество членов в цикле
+                ok = false;
+            try 
+            {
+                checked
+                { 
+                    f = 1;
+                    for (k = 2; k <= n; ++k ) 
+                    {
+                        f = f * k;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                f = 0;
+                ok = false;
+            }
+            answer = f;
+            return ok;
+        }
     }
 }
