@@ -43,6 +43,7 @@ namespace Lab4_Metods
             {
                 f = 0;
                 ok = false;
+                Console.Write("Переполнение\n\n");
             }
             answer = f;
             return ok;
