@@ -11,9 +11,10 @@ namespace Lab4_Metods
         static void Main(string[] args)
         {
             int x; 
-            int y; 
+            int y;
+            int z=0;
             int greater;
-            int f;
+            long f;
             bool ok;
 
             Console.WriteLine("Введите первую цифру:");
@@ -24,12 +25,20 @@ namespace Lab4_Metods
             greater = Utils.Greater(x, y);
             Console.WriteLine("большее число это" + greater);
             Utils.Swap(ref x, ref y);
-            Console.WriteLine("После метода Swap x={0},y={1} ", x, y);
+            Console.WriteLine("После метода Swap z={0},y={1} ",x, y);
+           
             Console.WriteLine("Введите число для расчёта факториала:");
-            x = int.Parse(Console.ReadLine());
-            ok = Utils.Factorial(x, out f);
+            try
+            { 
+            z = int.Parse(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("Введено не число");
+            }
+            ok = Utils.Factorial(z, out f);
             if (ok)
-                Console.WriteLine("Факториал введённого числа{0} равен {1}",x, f);
+                Console.WriteLine("Факториал введённого числа{0} равен {1}",z, f);
             else
                 Console.WriteLine("Невозможно вычислить факториал");
 
