@@ -1,0 +1,7 @@
+C:\Users\Пользователь\source\repos\Lab4-Metods\Lab4-Metods\bin\Debug\Lab4-Metods.exe.config
+C:\Users\Пользователь\source\repos\Lab4-Metods\Lab4-Metods\bin\Debug\Lab4-Metods.exe
+C:\Users\Пользователь\source\repos\Lab4-Metods\Lab4-Metods\bin\Debug\Lab4-Metods.pdb
+C:\Users\Пользователь\source\repos\Lab4-Metods\Lab4-Metods\obj\Debug\Lab4-Metods.csprojAssemblyReference.cache
+C:\Users\Пользователь\source\repos\Lab4-Metods\Lab4-Metods\obj\Debug\Lab4-Metods.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\Lab4-Metods\Lab4-Metods\obj\Debug\Lab4-Metods.exe
+C:\Users\Пользователь\source\repos\Lab4-Metods\Lab4-Metods\obj\Debug\Lab4-Metods.pdb

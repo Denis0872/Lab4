@@ -6,11 +6,21 @@ using System.Threading.Tasks;
 
 namespace Lab4_Metods
 {
-    class Program
+    public class Test
     {
         static void Main(string[] args)
         {
-            int x = 2;
+            int x; 
+            int y; 
+            int greater;
+
+            Console.WriteLine("Введите первую цифру:");
+            x = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите вторую цифру:");
+            y = int.Parse(Console.ReadLine());
+            greater = Utils.Greater(x, y);
+            Console.WriteLine("большее число это" + greater);
+            Console.ReadKey();
         }
     }
 }
