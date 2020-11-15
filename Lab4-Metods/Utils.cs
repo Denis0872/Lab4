@@ -21,7 +21,7 @@ namespace Lab4_Metods
             a = b;
             b = temp;
         }
-        public static bool Factorial(long n, out long answer)
+        public static bool Factorial(int n, out long answer)
         {
             int k; //счётчик
             long f;//промежуточное значение
