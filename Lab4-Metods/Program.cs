@@ -18,11 +18,11 @@ namespace Lab4_Metods
             x = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите вторую цифру:");
             y = int.Parse(Console.ReadLine());
-            Console.WriteLine("До метода Swap: " + x + "," + y);
+            Console.WriteLine("До метода Swap x={0},y={1} ", x, y);
             greater = Utils.Greater(x, y);
             Console.WriteLine("большее число это" + greater);
             Utils.Swap(ref x, ref y);
-            Console.WriteLine("После метода Swap: " + x + "," + y);
+            Console.WriteLine("После метода Swap x={0},y={1} ", x, y);
             Console.ReadKey();
         }
     }
