@@ -28,20 +28,27 @@ namespace Lab4_Metods
             Console.WriteLine("После метода Swap z={0},y={1} ",x, y);
            
             Console.WriteLine("Введите число для расчёта факториала:");
-            try
-            { 
-            z = int.Parse(Console.ReadLine());
-            }
-            catch
-            {
-                Console.WriteLine("Введено не число");
-            }
-            ok = Utils.Factorial(z, out f);
-            if (ok)
-                Console.WriteLine("Факториал введённого числа{0} равен {1}",z, f);
-            else
-                Console.WriteLine("Невозможно вычислить факториал");
 
+                try
+                { 
+                z = int.Parse(Console.ReadLine());
+                }
+                catch
+                {
+                    Console.WriteLine("Введено не число");
+                }
+                if (z == 1 || z<0 )
+                { Console.WriteLine("нерекурсивная ветка."); }
+                else if (z == 0 )
+                { Console.WriteLine("Невозможно вычислить факториал"); }
+                else
+                {
+                    ok = Utils.Factorial(z, out f);
+                    if (ok)
+                        Console.WriteLine("Факториал введённого числа{0} равен {1}", z, f);
+                    else
+                        Console.WriteLine("Невозможно вычислить факториал");
+                }
             Console.ReadKey();
         }
     }
